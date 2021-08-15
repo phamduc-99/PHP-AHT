@@ -1,3 +1,4 @@
+
 <h1>Create task</h1>
 <form method='post' action='#'>
     <div class="form-group">
@@ -9,5 +10,5 @@
         <label for="description">Description</label>
         <input type="text" class="form-control" id="description" placeholder="Enter a description" name="description">
     </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="submit" name="sbm" class="btn btn-primary">Submit</button>
 </form>

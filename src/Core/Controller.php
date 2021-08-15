@@ -1,4 +1,5 @@
 <?php
+    namespace MVC\Core;
     class Controller
     {
         var $vars = [];
@@ -13,7 +14,9 @@
         {
             extract($this->vars);
             ob_start();
-            require(ROOT . "Views/" . ucfirst(str_replace('Controller', '', get_class($this))) . '/' . $filename . '.php');
+            $a = str_replace('MVC\Controllers', '', get_class($this));
+            $b = ucfirst(str_replace('Controller', '', $a));
+            require(BASEPATH . "Views/" . $b . '/' . $filename . '.php');
             $content_for_layout = ob_get_clean();
 
             if ($this->layout == false)
@@ -22,7 +25,7 @@
             }
             else
             {
-                require(ROOT . "Views/Layouts/" . $this->layout . '.php');
+                require(BASEPATH . "Views/Layouts/" . $this->layout . '.php');
             }
         }
 

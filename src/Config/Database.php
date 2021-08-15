@@ -1,5 +1,10 @@
 <?php
 
+namespace MVC\config;
+
+use PDO;
+
+
 class Database
 {
     private static $bdd = null;
