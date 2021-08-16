@@ -3,21 +3,22 @@
 namespace MVC\Models;
 
 use MVC\Models\SinhvienResourceModel;
+use MVC\Models\SinhvienModel;
 
 class SinhvienRepository
 {
     
-    public function add($model)
+    public function add(SinhvienModel $model)
     {
         $sinhvienResourceModel = new SinhvienResourceModel;
         return $sinhvienResourceModel->save($model);
     }
-    public function get($id)
+    public function get(int $id)
     {
         $sinhvienResourceModel = new SinhvienResourceModel;
         return $sinhvienResourceModel->get($id);
     }
-    public function delete($id)
+    public function delete(int $id)
     {
         $sinhvienResourceModel = new SinhvienResourceModel;
         return $sinhvienResourceModel->delete($id);
