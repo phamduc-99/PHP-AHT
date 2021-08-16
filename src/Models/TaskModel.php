@@ -1,7 +1,7 @@
 <?php
 namespace MVC\Models;
 use MVC\Core\Model;
-class taskModel extends Model
+class TaskModel extends Model
 {
     public $id;
     public $title;
