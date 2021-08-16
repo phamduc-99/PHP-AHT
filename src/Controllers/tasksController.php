@@ -5,7 +5,7 @@ use MVC\Core\Controller;
 use MVC\Models\TaskRepository;
 use MVC\Models\taskModel;
 
-class tasksController extends Controller
+class TasksController extends Controller
 {
     function index()
     {
