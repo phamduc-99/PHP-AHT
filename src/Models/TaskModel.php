@@ -3,9 +3,9 @@ namespace MVC\Models;
 use MVC\Core\Model;
 class TaskModel extends Model
 {
-    public $id;
-    public $title;
-    public $description;
+    protected $id;
+    protected $title;
+    protected $description;
 
     public function setId($id)
     {
@@ -33,5 +33,3 @@ class TaskModel extends Model
     }
 }
 
-
-?>

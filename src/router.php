@@ -2,10 +2,12 @@
 
 namespace MVC;
 
+use Mvc\Request;
+
 class Router
 {
 
-    static public function parse($url, $request)
+    static public function parse($url,Request $request)
     {
         $url = trim($url);
 
